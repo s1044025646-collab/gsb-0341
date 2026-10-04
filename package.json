@@ -1,0 +1,26 @@
+{
+  "name": "obst-analyzer",
+  "version": "1.0.0",
+  "description": "静态最优二叉搜索树（成功查询）分析后端：DP 选根、查询路径解释、候选树核验，API + CLI",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "obst": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "demo": "tsx src/cli.ts demo",
+    "cli": "tsx src/cli.ts"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
